@@ -1,0 +1,57 @@
+.card-wrapper {
+  height: 67em;
+  float: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 25%;
+
+  .card-header {
+    background-size: contain;
+    background-image: url('http://68.media.tumblr.com/525b9e089db6911da042dc9d836288e4/tumblr_odykgb7cZG1s308l9o1_500.gif');
+    height: 20em;
+  }
+
+  .profile-image-container {
+    width: 99%;
+    //  border: 1px solid green;
+    height: 171px;
+    float: left;
+    margin-top: -4em;
+    position: relative;
+    text-align: center;
+
+    .profile-img {
+      background-image: url(../images/suvadip.jpg);
+      background-repeat: no-repeat;
+      height: 113px;
+      width: 113px;
+      background-size: cover;
+      margin: 0 auto;
+      border-radius: 73px;
+      border: 2px solid white;
+    }
+  }
+
+  .salution-container {
+    width: 100%;
+    text-align: center;
+    padding: 3.5em 0 1em 0;
+
+    p {
+      font-size: 3em;
+      font-family: serif;
+    }
+  }
+
+  .card-body-conationer {
+    width: 100%;
+
+    .card-body {
+      width: 88%;
+      text-align: justify;
+      margin: 0 24px 26px 24px;
+      // border: 1px solid red;
+      overflow: auto;
+    }
+  }
+}
