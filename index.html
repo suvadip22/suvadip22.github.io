@@ -2,9 +2,10 @@
 layout: default
 ---
 
-{% include landing-page.html %}
-
-
-{% if page.layout == 'blog-list' %}
-  {% include blog-list.html %}
+{% if page.url == '/' %}
+  {% include landing-page.html %}
 {% endif %}
+
+<!-- {% if page.layout == '/blog-list' %}
+  {% include blog-list.html %}
+{% endif %} -->
