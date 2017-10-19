@@ -311,10 +311,29 @@
           flex-direction: column;
 }
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
-  max-width: 512px;
-  margin: 16px auto;
+  //width:744px;
+  max-width: 744px;
+  margin: 12px auto 30px auto;
   font-size: 16px;
   line-height: 28px;
+}
+
+.mdl-card__supporting-text {
+  h1,h2,h3,h4,h5,h6 {
+    max-width: 755px;
+    width: 744px;
+  }
+
+  table {
+    max-width: 755px;
+    width: 675px;
+  }
+
+//  .highlight {
+//     max-width: 755px;
+//     width: 755px
+//   }
+  
 }
 
 .demo-blog--blogpost .comments {
