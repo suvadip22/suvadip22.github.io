@@ -222,17 +222,11 @@
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.demo-blog .on-the-road-again .mdl-card__media {
+
+/*.demo-blog .on-the-road-again .mdl-card__media {
   background-image: url('../images/road.jpg');
-}
+}*/
 
-.demo-blog .amazing .mdl-card__media {
-  background-image: url('../images/boxer.jpg');
-}
-
-.demo-blog .shopping .mdl-card__media {
-  background-image: url('../images/shopping.jpg');
-}
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
   display: -webkit-flex;
@@ -290,7 +284,7 @@
   background-color: transparent;
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('../images/road_big.jpg');
+  //background-image: url('../images/road_big.jpg');
   height: 280px;
 }
 .demo-blog--blogpost .comments {

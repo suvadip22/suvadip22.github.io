@@ -27,7 +27,8 @@
           </div>
           <div class="demo-blog__posts mdl-grid">
             <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__media mdl-color-text--grey-50">
+              <div class="mdl-card__media mdl-color-text--grey-50"
+                   style="background-image: url({{page.post-img | prepend: site.baseurl}});">
                 <h3>{{page.title}}</h3>
               </div>
               <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
@@ -54,7 +55,9 @@
                 {{content}}
 
               </div>
-              <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
+
+              <!--- discussion section -->
+              <!-- <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
                 <form>
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <textarea rows=1 class="mdl-textfield__input" id="comment"></textarea>
@@ -112,7 +115,8 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
+              
             </div>
 
             <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
