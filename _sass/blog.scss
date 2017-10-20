@@ -538,3 +538,11 @@
   margin-bottom: 40px;
   z-index: 900;
 }
+
+.mdl-card__media {
+  &.newest-post-excerpt {
+    a {
+      text-decoration: none;
+    }
+  }
+}

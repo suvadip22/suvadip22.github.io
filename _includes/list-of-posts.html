@@ -1,0 +1,15 @@
+<div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
+  <div class="mdl-card__media mdl-color-text--grey-50" 
+        style="background-image: url({{post.list-img | prepend: site.baseurl}});">
+    <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
+  </div>
+  <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+    {{ post.excerpt }}
+  </div>
+  <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 mdl-cell--6-col">
+    <div class="minilogo"></div>
+    <div>
+      <strong>{{ post.date | date_to_long_string }}</strong>
+    </div>
+  </div>
+</div>
