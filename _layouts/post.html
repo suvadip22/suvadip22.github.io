@@ -33,8 +33,7 @@
               <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
                 <div class="minilogo"></div>
                 <div>
-                  <strong>The Newist</strong>
-                  <span>2 days ago</span>
+                  <strong>{{ page.date | date_to_long_string }}</strong>
                 </div>
                 <div class="section-spacer"></div>
                 <div class="meta__favorites">
@@ -50,7 +49,7 @@
                   <span class="visuallyhidden">share</span>
                 </div>
               </div>
-              <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+              <div class="mdl-color-text--grey-700 mdl-card__supporting-text main-post-content">
 
                 {{content}}
 
