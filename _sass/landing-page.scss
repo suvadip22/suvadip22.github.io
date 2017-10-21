@@ -1,9 +1,10 @@
 .menu-conatiner {
-  height: 5em;
+  height: 76em;
   width: 4%;
   float: left;
   margin-top: 2.5em;
   margin-left: 25%;
+  margin-right: 0.5em;
 
   button {
     width: 100%;
@@ -16,6 +17,10 @@
   button:hover {
     background-color: #72a0a0;
   }
+}
+
+.mdl-button--disabled {
+  background-color: rgb(226, 219, 219) !important;
 }
 
 .card-wrapper {

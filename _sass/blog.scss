@@ -307,6 +307,7 @@
 
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 744px;
+  width: 744px;
   margin: 10px auto 20px auto;
   font-size: 16px;
   line-height: 28px;
@@ -317,12 +318,12 @@
 }
 
 .mdl-card__supporting-text.main-post-content {
-  h1,h2,h3 {
+  h1,h2,h3,h4 {
     max-width: 755px;
     margin-bottom: 25px;
   }
 
-  h4,h5,h6 {
+  h5,h6 {
     max-width: 755px;
     width: 744px;
     margin-bottom: 20px;

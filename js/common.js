@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
-  $("#view-source").click(function(){
-      alert('Hello');
-      $(window).scrollTop(0);
-      return false;
-  });
+  $('#view-source').click(function(){
+    //alert('Hi');
+    $(window).scrollTop( $("#top").offset().top );
+		return false;
+	});
 });

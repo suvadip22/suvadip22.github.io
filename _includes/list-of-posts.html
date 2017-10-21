@@ -1,10 +1,11 @@
 <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col">
   <div class="mdl-card__media mdl-color-text--grey-50" 
-        style="background-image: url({{post.list-img | prepend: site.baseurl}});">
+        style="background-image: url({{post.list-img | prepend: site.baseurl}});"
+        onclick="location.href='{{site.baseurl}}{{post.url}}';">
     <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h3>
   </div>
   <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
-    {{ post.excerpt }}
+    {{ post.excerpt | truncate: 330 }}
   </div>
   <div class="mdl-card__supporting-text meta mdl-color-text--grey-600 mdl-cell--6-col">
     <div class="minilogo"></div>
