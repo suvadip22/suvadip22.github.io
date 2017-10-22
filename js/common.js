@@ -1,7 +1,6 @@
 jQuery(document).ready(function(){
-  $('#view-source').click(function(){
-    //alert('Hi');
-    $(window).scrollTop( $("#top").offset().top );
-		return false;
-	});
+ $(".menu-list li").on('click',function(e) {
+   $(".menu-list li").removeClass("highlight");
+   $(this).addClass("highlight");
+ })
 });

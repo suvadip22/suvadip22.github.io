@@ -40,6 +40,20 @@
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
+.blog-container > div:first-child {
+  position: inherit;
+}
+
+.blog-container {
+  .post-list {
+    display: none;
+  }
+
+  #all {
+    display: block;
+  }
+}
+
 .demo-blog .demo-blog__posts {
   max-width: 900px;
   padding: 0;
@@ -53,8 +67,17 @@
           flex-shrink: 0;
 }
 
+.menu-container {
+  text-align: right;
+  padding: 10px 20px;
+
+  ul li.highlight {
+    background-color: rgb(192, 188, 188);
+  }
+}
+
 .demo-blog.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  padding-top: 170px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
