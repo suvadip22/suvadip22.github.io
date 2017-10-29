@@ -1,3 +1,32 @@
+.main-body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('https://avante.biz/wp-content/uploads/Black-And-White-HD-Wallpapers/Black-And-White-HD-Wallpapers-056.jpg');
+}
+
+
+.drawer-menu {
+  position: fixed;
+
+  .nav-text {
+    padding-left: 1em;
+    font-size: 1em;
+    vertical-align: middle;
+  }
+
+  .in-active-text {
+    margin-top: 2em;
+    padding-left: 0.5em;
+    font-size: 1em;
+    font-style: italic;
+    color: grey;
+  }
+}
+
+.drawer-icon {
+  color: white;
+}
+
 .menu-conatiner {
   height: 76em;
   width: 4%;
@@ -24,26 +53,17 @@
 }
 
 .card-wrapper {
-  height: 67em;
-  float: left;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  //margin-left: 25%;
+  margin: 2em auto;
 
   .card-header {
-    background-size: contain;
+    background-size: inherit;
     background-image: url('http://68.media.tumblr.com/525b9e089db6911da042dc9d836288e4/tumblr_odykgb7cZG1s308l9o1_500.gif');
     height: 20em;
   }
 
   .profile-image-container {
     width: 99%;
-    //  border: 1px solid green;
-    height: 171px;
-    float: left;
     margin-top: -4em;
-    position: relative;
-    text-align: center;
 
     .profile-img {
       background-image: url('../images/suvadip.jpg');
@@ -75,8 +95,95 @@
       width: 88%;
       text-align: justify;
       margin: 0 24px 26px 24px;
-      // border: 1px solid red;
       overflow: auto;
     }
   }
+}
+
+/* To support tablet potrait*/
+@media screen 
+and (max-width: 1366px) 
+and (min-width: 768px) 
+and (orientation : portrait) {
+  .drawer-icon {
+    margin: 0.6em;
+  }
+
+  .card-wrapper {
+    margin: 7em auto;
+  }
+
+  .card-body {
+    margin: 0 24px 26px 16px !important;
+  }
+}
+
+/* To support tablet landscape*/
+@media screen 
+and (max-width: 1366px) 
+and (min-width: 768px) 
+and (orientation : landscape) {
+  .drawer-icon {
+    margin: 0.6em;
+  }
+
+  .card-wrapper {
+    margin: 2em auto;
+  }
+
+  .card-body {
+    margin: 0 24px 26px 16px !important;
+  }
+}
+
+
+/* To support mobile landscape*/
+@media screen 
+and (max-width: 736px) 
+and (min-width: 320px)
+and (orientation : landscape) {
+  .drawer-icon {
+    margin: 0.5em;
+  }
+  .card-wrapper {
+    margin: 2em auto;
+  }
+
+  .card-body {
+    margin: 0 21px 26px 16px !important;
+  }
+}
+
+/* To support mobile potrait*/
+@media screen 
+and (max-width: 736px) 
+and (min-width: 320px)
+and (orientation : portrait) {
+  .drawer-icon {
+    margin: 35px 0 0 10px;
+  }
+  .card-wrapper {
+    margin: 2em auto;
+  }
+
+  .card-body {
+    margin: 0 !important;
+  }
+}
+
+
+/* To support mobile potrait*/
+// @media screen and (max-width: 400px) {
+//   .menu-conatiner {
+//     display: none;
+//   }
+
+//   .card-wrapper {
+//     margin: 2em auto;
+//     float:none;
+//   }
+// }
+
+.mdl-layout__obfuscator {
+  position: fixed;
 }

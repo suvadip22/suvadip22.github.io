@@ -1,11 +1,5 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-.main-body {
-  background-repeat: no-repeat;
-  //background-size: contain;
-  background-image: url('https://avante.biz/wp-content/uploads/Black-And-White-HD-Wallpapers/Black-And-White-HD-Wallpapers-056.jpg');
-}
-
 @import "landing-page";
 @import "blog"; 
