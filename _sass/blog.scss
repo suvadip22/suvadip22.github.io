@@ -1,4 +1,10 @@
 /* This CSS for both blog list and posts */
+@import 'nav-top';
+
+.back-wrapper {
+    margin-left: 10px;
+    margin-top: -3.1em;
+}
 
 .blog-container::before {
     background-size: cover;
@@ -60,7 +66,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -69,7 +75,7 @@
 
 .menu-container {
   text-align: right;
-  padding: 10px 20px;
+  padding: 15px 20px;
 
   ul li.highlight {
     background-color: rgb(192, 188, 188);
@@ -551,16 +557,6 @@
           align-items: center;
   background-color: white;
   box-sizing: border-box;
-}
-
-#view-source {
-  position: fixed;
-  display: block;
-  right: 0;
-  bottom: 0;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  z-index: 900;
 }
 
 .mdl-card__media {
