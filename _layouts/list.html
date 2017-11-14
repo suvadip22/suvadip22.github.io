@@ -16,43 +16,79 @@
 
 {%include head.html %}
 
-<body>
+<body class="mdl-layout mdl-js-layout">
+  {% include drawer-filter.html %}
 
-  <!-- include header menu -->
-  {% include header.html %}
-
-  <div class="back-wrapper">
+  <!-- <div class="back-wrapper">
     <a class="back-button mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color-text--white" 
       href="{{site.baseurl}}/" title="go back" role="button">
       <i class="material-icons" role="presentation">arrow_back</i>
     </a>
-  </div>
+  </div> -->
 
   <div id="top" class="blog-container">
     <div class="demo-blog mdl-layout">  
-      <main class="mdl-layout__content">
-        <div class="demo-blog__posts mdl-grid">
-          
-          {% for post in site.categories.blog limit:1 %}
-            {% include newest-post.html %}
-          {% endfor %}
+      <main class="filter-list mdl-layout__content">
+        <div id="all" class="filter-section is-active">
 
-          {% for post in site.categories.blog offset:1 %}
-            {% include list-of-posts.html %}
-          {% endfor %}
+          <div class="demo-blog__posts mdl-grid">
+            {% assign sorted-posts = site.posts | where: "categories", "blog" %}
 
-          <!-- <nav class="demo-nav mdl-cell mdl-cell--12-col">
-            <div class="section-spacer"></div>
-            <a href="{{site.baseurl}}{{post.url}}" class="demo-nav__button" title="show more">
-              More
-              <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                <i class="material-icons" role="presentation">arrow_forward</i>
-              </button>
-            </a>
-          </nav> -->
+            {% for post in sorted-posts limit: 1 %}
+              {% include newest-post.html %}
+            {% endfor %}
+  
+            {% for post in sorted-posts offset: 1 %}
+              {% include list-of-posts.html %}
+            {% endfor %}
+          </div>
         </div>
+
+        <div id="science" class="filter-section">
+          <div class="demo-blog__posts mdl-grid">
+            {% assign sorted-posts = site.posts | where: "type","science" %}
+            
+            {% for post in sorted-posts limit: 1 %}
+              {% include newest-post.html %}
+            {% endfor %}
+
+            {% for post in sorted-posts offset: 1 %}
+              {% include list-of-posts.html %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div id="photography" class="filter-section">
+          <div class="demo-blog__posts mdl-grid">
+            {% assign sorted-posts = site.posts | where: "type","photography" %}
+
+            {% for post in sorted-posts limit: 1 %}
+              {% include newest-post.html %}
+            {% endfor %}
+
+            {% for post in sorted-posts offset: 1 %}
+              {% include list-of-posts.html %}
+            {% endfor %}
+          </div>
+        </div>
+
+        <div id="travel" class="filter-section">
+          <div class="demo-blog__posts mdl-grid">
+            {% assign sorted-posts = site.posts | where: "type","travel" %}
+
+            {% for post in sorted-posts limit: 1 %}
+              {% include newest-post.html %}
+            {% endfor %}
+
+            {% for post in sorted-posts offset: 1 %}
+              {% include list-of-posts.html %}
+            {% endfor %}
+          </div>
+        </div>
+
         <!-- Add footer -->
         {% include footer.html %}
+        <script src="{{site.baseurl}}/js/filter-list.js"></script>
       </main>
     </div>
     <!-- navigation button to move to top -->
