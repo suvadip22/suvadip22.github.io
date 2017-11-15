@@ -10,16 +10,23 @@
 
   .nav-text {
     padding-left: 1em;
-    font-size: 1em;
+    font-size: medium;
+    font-weight: bold;
+    color: #cb1f88;
     vertical-align: middle;
   }
 
-  .in-active-text {
+  .soon-text {
     margin-top: 2em;
     padding-left: 0.5em;
     font-size: 1em;
     font-style: italic;
     color: grey;
+  }
+
+  .in-active-text {
+    color: grey;
+    font-weight: normal;
   }
 }
 
