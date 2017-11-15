@@ -562,3 +562,14 @@
     }
   }
 }
+
+.demo-blog {
+  .tags-wrapper {
+    display: inline-block;
+  
+    .tags-chip {
+      min-width: 50px;
+      text-align: center;
+    }
+  }
+}

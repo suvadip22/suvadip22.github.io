@@ -5,5 +5,16 @@
 
 	.is-active {
 		display: block;
-	}
+  }
+}
+
+.filter-list {
+  .filter-item {
+
+    &.active-filter {
+      color: #cb1f88;
+      font-weight: bolder;
+      font-size: medium;
+    }
+  }
 }

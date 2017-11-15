@@ -12,5 +12,14 @@
     <div>
       <strong>{{ post.date | date_to_long_string }}</strong>
     </div>
+    <div class="section-spacer"></div>
+    <div class="tags-wrapper">
+      {% for tag in post.tags %}
+        <span class="mdl-chip tags-chip">
+          <span class="mdl-chip__text">{{tag}}</span>
+        </span>
+      {% endfor %}
+    </div>
+    
   </div>
 </div>
